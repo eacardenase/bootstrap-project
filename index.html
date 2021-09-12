@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <!-- logo -->
         <div class="container">
             <a href="#" class="navbar-brand">Frontend Bootcamp</a>
@@ -148,7 +148,7 @@
             </div>
         </div>
     </section>
-    <section id="learn" class="p-5 bg-dark text-light">
+    <section class="p-5 bg-dark text-light">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
@@ -168,6 +168,198 @@
                 <div class="col-md">
                     <img src="./img/react.svg" class="img-fluid" alt="">
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- Question Accordion -->
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently Asked Questions
+            </h2>
+            <div class="accordion" id="questions">
+                <!-- single question -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente aperiam eveniet dignissimos quisquam ad ex modi perspiciatis optio! Officia, consequatur corrupti recusandae sed dignissimos quis iste praesentium quae fugit esse, voluptatum repellendus sint molestias facilis cupiditate reiciendis eos laudantium! Totam dignissimos non quia blanditiis rerum modi, molestiae doloremque quae.
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+                <!-- single question -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                            How much does it cost to attend?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente aperiam eveniet dignissimos quisquam ad ex modi perspiciatis optio! Officia, consequatur corrupti recusandae sed dignissimos quis iste praesentium quae fugit esse, voluptatum repellendus sint molestias facilis cupiditate reiciendis eos laudantium! Totam dignissimos non quia blanditiis rerum modi, molestiae doloremque quae.
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+                <!-- single question -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                            What do I need to know?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente aperiam eveniet dignissimos quisquam ad ex modi perspiciatis optio! Officia, consequatur corrupti recusandae sed dignissimos quis iste praesentium quae fugit esse, voluptatum repellendus sint molestias facilis cupiditate reiciendis eos laudantium! Totam dignissimos non quia blanditiis rerum modi, molestiae doloremque quae.
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+                <!-- single question -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                            How do I sign up?
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente aperiam eveniet dignissimos quisquam ad ex modi perspiciatis optio! Officia, consequatur corrupti recusandae sed dignissimos quis iste praesentium quae fugit esse, voluptatum repellendus sint molestias facilis cupiditate reiciendis eos laudantium! Totam dignissimos non quia blanditiis rerum modi, molestiae doloremque quae.
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+                <!-- single question -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                            Will you help me find a job?
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente aperiam eveniet dignissimos quisquam ad ex modi perspiciatis optio! Officia, consequatur corrupti recusandae sed dignissimos quis iste praesentium quae fugit esse, voluptatum repellendus sint molestias facilis cupiditate reiciendis eos laudantium! Totam dignissimos non quia blanditiis rerum modi, molestiae doloremque quae.
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single question -->
+            </div>
+        </div>
+    </section>
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our instructors</h2>
+            <p class="lead text-center text-white mb-5">
+                Our instructors all have 5+ years working as web developers in the <span class="text-warning">
+                    industry
+                </span> 
+            </p>
+            <div class="row g-4">
+                <!-- single instructor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni totam ut doloribus mollitia voluptate!
+                            </p>
+                            <a href="#">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single instructor -->
+                <!-- single instructor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Jane Doe</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni totam ut doloribus mollitia voluptate!
+                            </p>
+                            <a href="#">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single instructor -->
+                <!-- single instructor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Steve Smith</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni totam ut doloribus mollitia voluptate!
+                            </p>
+                            <a href="#">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single instructor -->
+                <!-- single instructor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Sara Smith</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni totam ut doloribus mollitia voluptate!
+                            </p>
+                            <a href="#">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single instructor -->
             </div>
         </div>
     </section>
