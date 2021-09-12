@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <!-- custom css -->
     <link rel="stylesheet" href="./style.css">
     <title>Frontend Bootcamp</title>
@@ -363,7 +365,61 @@
             </div>
         </div>
     </section>
-    <!-- javascript -->
+    <!-- Contact & Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">
+                        Contact Info
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Main Location:
+                            </span> 
+                            50 Main St Boston MA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Enrollment Phone:
+                            </span> 
+                            (500) 555-5555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Student Phone:
+                            </span> 
+                            (333) 333-3333
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Enrollment Email:
+                            </span> 
+                            enroll@frontendbc.test
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- mapbox javascrip -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWFjYXJkZW5hc2UiLCJhIjoiY2t0aHVxeXp1MDB3aDJvbDV6ZGZhMDl3diJ9.oVk3ecL-WY0n_V-eIYNWfQ';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-74.040734, 4.721856],
+        zoom: 15
+        });
+    </script>
 </body>
 </html>
